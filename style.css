@@ -116,3 +116,7 @@ body {
   padding: 0 10% 3em;
   text-align: center;
 }
+
+.section-body {
+  margin-bottom: 2em;
+}
