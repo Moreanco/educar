@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-family: "Dosis";
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.landing {
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url("assets/landing.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#main-title {
+  color: #fff;
+  font-size: 2em;
+  letter-spacing: 0.5em;
+  opacity: 0.9;
+  transition: fade-in ease 2s;
+}
+
+
+.blank {
+  height: 100vh;
+}
+
+.btn {
+  background-color: #ddd;
+  border-radius: 2px;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 6em 3em;
+  width: 60vw;
+}
+
+.intro p {
+  margin: 1em 0;
+}
+
+.box {
+  width: 30%;
+}
+
+.box.img {
+  display: flex;
+  transform: translateX(25%);
+}
+
+.quote {
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.quote-author {
+  font-size: 0.75em;
+}
+
+.section-intro {
+  display: flex;
+  background-color: rgba(10, 10, 10, 0.8);
+  align-items: center;;
+  justify-content: space-between;
+  color: #fff;
+  padding: 3em 0;
+  width: 100%;
+}
+
+.section-intro > * {
+  margin: 0 8em;
+}
+
+.section-img {
+  position: relative;
+  height: 20em;
+}
+
+.stacked {
+  transform: translate(-25%, -25%);
+}
+
+.grayed {
+  filter: grayscale(100%);
+}
+
+.bio {
+  padding: 3em 20%;
+  text-align: justify;
+}
+
+.bio .quote {
+  padding: 0 10% 3em;
+  text-align: center;
+}
