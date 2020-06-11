@@ -7,13 +7,13 @@ body {
   color: #222;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  letter-spacing: 2px;
   margin: 0;
 }
 
 .title {
   font-family: "Dosis";
   line-height: 1.8;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -26,7 +26,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 76px);
+  height: 100vh;
   justify-content: center;
 }
 
@@ -120,7 +120,7 @@ body {
 
 @media (max-width: 768px) {
   .landing {
-    height: calc(100vh - 56px);
+    height: 100vh;
   }
   #main-title {
     padding: 1em;
