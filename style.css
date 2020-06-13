@@ -30,6 +30,12 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .landing {
+    background-image: url("assets/landing-tablet.png");
+  }
+}
+
 #main-title {
   color: #fff;
   font-size: 2em;
