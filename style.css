@@ -10,11 +10,16 @@ body {
   margin: 0;
 }
 
-.title {
+.title,
+.sub-title {
   font-family: "Dosis";
-  line-height: 1.8;
   letter-spacing: 2px;
   text-transform: uppercase;
+  line-height: 1.8;
+}
+
+.sub-title {
+  font-size: 1.3em;
 }
 
 .landing, .landing-img {
