@@ -40,6 +40,10 @@ body {
   margin: 0;
 }
 
+.w-100 {
+  max-width: 100%;
+}
+
 @media (max-width: 768px) {
   .landing-img {
     background-image: url("assets/landing-tablet.png");
