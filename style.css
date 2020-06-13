@@ -138,6 +138,13 @@ body {
   margin-bottom: 2em;
 }
 
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width: 768px) {
   #main-title {
     padding: 1em;
