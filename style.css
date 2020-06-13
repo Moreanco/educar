@@ -157,7 +157,7 @@ body {
     margin: 20px;
   }
   
-  .section-img img {
+  .section-img > img {
     max-width: 90%;
   }
 }
