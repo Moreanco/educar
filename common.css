@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #eeefee;
+    color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.w-100 {
+    max-width: 100%;
+}
+
+.btn {
+    background-color: #ddd;
+    border-radius: 2px;
+    color: #222;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.box {
+    width: 30%;
+}
+
+.quote {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+.quote-author {
+    font-size: 0.75em;
+}
+
+.grayed {
+    filter: grayscale(85%);
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+  }
