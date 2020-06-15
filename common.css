@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
 }
 
 .grayed {
-    filter: grayscale(85%);
+    filter: grayscale(100%);
 }
 
 .center {
@@ -75,5 +75,8 @@ html.sr p, h2, .img, a {
 @media screen and (max-width: 768px) {
     .w-20 {
         display:none
+    }
+    .content {
+        font-size: unset;
     }
 }
