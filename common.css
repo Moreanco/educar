@@ -76,7 +76,4 @@ html.sr p, h2, .img, a {
     .w-20 {
         display:none
     }
-    .content {
-        font-size: unset;
-    }
 }
