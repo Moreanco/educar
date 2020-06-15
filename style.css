@@ -11,12 +11,14 @@
 }
 
 .landing,
-.landing-img {
+.landing-img,
+.content {
   height: 100vh;
   width: 100%;
 }
 
-.landing {
+.landing,
+.content {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -42,13 +44,13 @@
   text-align: center;
 }
 
-.intro {
+.content {
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
 
-.intro p {
+.content * {
   margin: 1em 0;
 }
 
@@ -78,8 +80,17 @@
 
 .content {
   background-color: #eeefee;
-  padding: 5% 20% 10%;
   text-align: justify;
+}
+
+.content-container {
+  align-items: center;
+  flex: 2;
+  display: flex;
+}
+
+.multi {
+  flex-direction: column;
 }
 
 .content .quote {
@@ -97,12 +108,20 @@
   align-items: center;
 }
 
+.img {
+  width: 50%;
+}
+
 /**
  * MEDIA QUERIES
  */
 @media (max-width: 768px) {
   .landing-img {
     background-image: url("assets/landing-tablet.png");
+  }
+
+  .img {
+    max-height: 60%;
   }
 
   #main-title {
@@ -113,16 +132,25 @@
     width: 100%;
   }
 
-  .intro {
+  .content {
     flex-direction: column;
   }
 
-  .intro,
+  .content,
+  .section-intro {
+    padding: 4em 1em;
+  }
+
   .content,
   .section-intro {
     align-items: unset;
     flex-direction: column;
-    padding: 4em 1em;
+  }
+
+  .arrow-down {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -135,7 +163,7 @@
     transform: unset;
     margin: 20px;
   }
-  
+
   .section-img > img {
     max-width: 90%;
   }

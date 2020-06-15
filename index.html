@@ -1,187 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Educar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./gallery.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./gallery.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
     <!--
      * HEADER
      -->
-     <header>
-         <img class="landing-img" />
-         <hgroup class="landing">
-            <div class="title-container">
-                <h1 class="title" id="main-title">¿Quién fue Juana Paula Manso?</h1>
-            </div>
-             <div>
-                 <div class="arrow bounce">
-                    <a href="#intro"><img src="./assets/arrowDown.svg" class="arrow-down" /></a>
-                  </div>
-             </div>
-         </hgroup>
-     </header>
+    <header>
+      <img class="landing-img" />
+      <hgroup class="landing">
+        <div class="title-container">
+          <h1 class="title" id="main-title">¿Quién fue Juana Paula Manso?</h1>
+        </div>
+        <div>
+          <div class="bounce">
+            <a href="#intro">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 125"
+                class="arrow-down"
+              >
+                <switch>
+                  <g fill="#fff">
+                    <path
+                      d="M50 97.5c26.2 0 47.5-21.3 47.5-47.5S76.2 2.5 50 2.5 2.5 23.8 2.5 50 23.8 97.5 50 97.5zm0-88.2c22.4 0 40.7 18.2 40.7 40.7S72.4 90.7 50 90.7 9.3 72.4 9.3 50 27.6 9.3 50 9.3z"
+                    />
+                    <path
+                      d="M47.6 63.5c.6.6 1.5 1 2.4 1s1.8-.4 2.4-1l18.3-18.3c1.3-1.3 1.3-3.5 0-4.8a3.44 3.44 0 0 0-4.8 0L50 56.2 34.2 40.4c-.7-.7-1.5-1-2.4-1-.9 0-1.8.3-2.4 1a3.44 3.44 0 0 0 0 4.8l18.2 18.3z"
+                    />
+                  </g>
+                </switch>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </hgroup>
+    </header>
 
-    <div class="intro content" id="intro" class="intro">
-        <div class="box">
-            <blockquote class="quote">
-                <p>
-                    «La verdadera prosperidad de un pueblo, 
-                    como la verdadera nobleza de los individuos, 
-                    está basada en la educación».
-                </p>
-                <footer class="title quote-author">Juana Manso.</footer>
-            </blockquote>
-        </div>
-        <div class="box">
+    <div class="content" id="intro" class="intro">
+      <div class="content-container">
+        <blockquote class="quote">
+          <p>
+            «La verdadera prosperidad de un pueblo, como la verdadera nobleza de
+            los individuos, está basada en la educación».
+          </p>
+          <footer class="title quote-author">
             <p>
-                Juana Paula Manso fue una mujer atípica y pionera que se adelantó a realidades que luego se iban a ir concretando.
+              Juana Manso.
             </p>
-        </div>
-        <div class="box">
-            <p>
-                Fue traductora desde muy joven, periodista, escritora, pedagoga, feminista y una mujer que intervino activamente en política.
-            </p>
-        </div>
+          </footer>
+        </blockquote>
+      </div>
+      <a class="bounce" href="#intro-2">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="intro-2">
+      <div class="content-container">
+        <p>
+          Juana Paula Manso fue una mujer atípica y pionera que se adelantó a
+          realidades que luego se iban a ir concretando.
+        </p>
+      </div>
+      <a class="bounce" href="#intro-3">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="intro-3">
+      <div class="content-container">
+        <p>
+          Fue traductora desde muy joven, periodista, escritora, pedagoga,
+          feminista y una mujer que intervino activamente en política.
+        </p>
+      </div>
+      <a class="bounce" href="#section-1">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
     </div>
     <!--
      * BIO TITLE
     -->
-    <div class="section-intro">
-        <div class="box">
-            <div class="section-body">
-                <h2 class="sub-title">Biografía</h2>
-                <blockquote class="quote">
-                    <p>
-                        «Conozco que la época en que vivo soy en mi país un alma huérfana o una planta exótica que no se puede aclimatar».
-                    </p>
-                    <footer class="title quote-author">Juana Manso.</footer>
-                </blockquote>
-            </div>
+    <div class="section-intro" id="section-1">
+      <div class="box">
+        <div class="section-body">
+          <h2 class="sub-title">Biografía</h2>
+          <blockquote class="quote">
+            <p>
+              «Conozco que la época en que vivo soy en mi país un alma huérfana
+              o una planta exótica que no se puede aclimatar».
+            </p>
+            <footer class="title quote-author">Juana Manso.</footer>
+          </blockquote>
         </div>
-        <div class="section-img">
-            <img src="./assets/02.jpg" alt="portaretrato juana manso" class="grayed">
-        </div>
+      </div>
+      <div class="section-img">
+        <img
+          src="./assets/02.jpg"
+          alt="portaretrato juana manso"
+          class="grayed"
+        />
+      </div>
     </div>
     <!--
      * BIO CONTENT
     -->
-    <div class="content" id="bio">
-
+    <div class="content" id="bio-1">
+      <div class="content-container multi">
         <h2 class="sub-title">Niñez</h2>
-
         <p>
-            Nació en Buenos Aires el <b>26 de junio de 1819</b> en el barrio de Monserrat. 
+          Nació en Buenos Aires el <b>26 de junio de 1819</b> en el barrio de
+          <!-- Monserrat. -->
         </p>
-
-        <img src="./assets/monserrat.png" class="w-100" alt="Balconada frente a la antigua plaza Montserrat (Lima y Belgrano), c. 1890 (AGN). Se observa a la derecha la calle del Pecado." />
-        
+        <img
+          <!-- src="./assets/monserrat.png" -->
+          class="w-100 img"
+          alt="Balconada frente a la antigua plaza Montserrat (Lima y Belgrano), c. 1890 (AGN). Se observa a la derecha la calle del Pecado."
+        />
+      </div>
+      <a class="bounce" href="#bio-2">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="bio-2">
+      <div class="content-container">
         <p>
-            Fue a la escuela Monserrat, aunque no se destacaba como buena alumna y acompañaba a su padre al café porteño La Victoria, donde recitaba odas patrióticas.
+          Fue a la escuela Monserrat, aunque no se destacaba como buena alumna y
+          acompañaba a su padre al café porteño La Victoria, donde recitaba odas
+          patrióticas.
         </p>
-
+      </div>
+      <a class="bounce" href="#bio-3">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="bio-3">
+      
+      <div class="content-container multi">
         <h2 class="sub-title">Familia y exilio</h2>
-        
         <p>
-            Su padre fue un andaluz llamado José María Manso y su madre una porteña, Teodora Cuenca. 
+          Su padre fue un andaluz llamado José María Manso y su madre una
+          porteña, Teodora Cuenca.
+        </p>
+      </div>
+      <a class="bounce" href="#bio-4">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="bio-4">
+      <div class="content-container">
+        <p>
+          En 1836 la familia Manso tuvo que exiliarse en Montevideo por la
+          persecución a los unitarios durante el gobierno de Juan Manuel de
+          Rosas.
+        </p>
+      </div>
+      <a class="bounce" href="#bio-5">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="bio-5">
+      <div class="content-container">
+        <p>
+          Luego, se exiliarían también en Río de Janeiro, donde conoció a su
+          marido con quien tuvo a sus dos hijas, Eulalia y Herminia. Durante su
+          matrimonio vivieron también en Estados Unidos y Cuba.
+        </p>
+      </div>
+
+      <div class="scroll-container diff-size">
+        <img
+          src="./assets/rio-de-janeiro.jpg"
+          class="w-100 scroll-section img grayed"
+          alt="Balconada frente a la antigua plaza Montserrat (Lima y Belgrano), c. 1890 (AGN). Se observa a la derecha la calle del Pecado."
+        />
+        <img
+          src="./assets/rio-de-janeiro-2.jpg"
+          class="w-100 scroll-section grayed"
+          alt="Balconada frente a la antigua plaza Montserrat (Lima y Belgrano), c. 1890 (AGN). Se observa a la derecha la calle del Pecado."
+        />
+      </div>
+      <a class="bounce" href="#bio-6">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="bio-6">
+      <div class="content-container multi">
+        <p>
+          Juana Manso regresó a Buenos Aires con sus dos hijas en julio de 1853,
+          ya sin Rosas en el poder.
         </p>
 
         <p>
-            En 1836 la familia Manso tuvo que exiliarse en Montevideo por la persecución a los unitarios durante el gobierno de Juan Manuel de Rosas.
+          Aquí escribió y dio clases particulares de inglés, francés e italiano,
+          pero, al no poder sostener económicamente a su familia, se vio
+          obligada a regresar a Brasil.
         </p>
-
-        <p>
-            Luego, se exiliarían también en Río de Janeiro, donde conoció a su marido con quien tuvo a sus dos hijas, Eulalia y Herminia.  Durante su matrimonio vivieron también en Estados Unidos y Cuba.
-        </p>
-        
-        <div class="scroll-container diff-size">
-            <img src="./assets/rio-de-janeiro.jpg" class="w-100 scroll-section" alt="Balconada frente a la antigua plaza Montserrat (Lima y Belgrano), c. 1890 (AGN). Se observa a la derecha la calle del Pecado." />
-            <img src="./assets/rio-de-janeiro-2.jpg" class="w-100 scroll-section" alt="Balconada frente a la antigua plaza Montserrat (Lima y Belgrano), c. 1890 (AGN). Se observa a la derecha la calle del Pecado." /> 
-        </div>
-
-        <p>Juana Manso regresó a Buenos Aires con sus dos hijas en julio de 1853, ya sin Rosas en el poder.</p>
-        
-        <p>
-            Aquí escribió y dio clases particulares de inglés, francés e italiano, pero, al no poder sostener económicamente a su familia, se vio obligada a regresar a Brasil. 
-        </p>
-        
+      </div>
+      <a class="bounce" href="#bio-7">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="bio-7">
+      <div class="content-container multi">
         <h2 class="sub-title center">Su regreso a Buenos Aires</h2>
-        
         <p>
-            Finalmente,  a mediados de 1859, regresó definitivamente a Buenos Aires, donde conoció a Domingo Faustino Sarmiento, tuvo una gran trayectoria como educadora y se convirtió en la primera mujer en ser funcionaria pública.
+          Finalmente, a mediados de 1859, regresó definitivamente a Buenos
+          Aires, donde conoció a Domingo Faustino Sarmiento, tuvo una gran
+          trayectoria como educadora y se convirtió en la primera mujer en ser
+          funcionaria pública.
         </p>
-        
-        <img src="./assets/sarmiento.jpg" class="w-100 center" alt="Balconada frente a la antigua plaza Montserrat (Lima y Belgrano), c. 1890 (AGN). Se observa a la derecha la calle del Pecado." />
-        
-        <p>
-            Juana Manso falleció en Buenos Aires el 24 de abril de 1875, fue sepultada en el Cementerio Británico y, en 1915, sus restos fueron trasladados al panteón de Maestros del cementerio de la Chacarita.
-        </p>
+        <img
+          src="./assets/sarmiento.jpg"
+          class="w-100 center img"
+          alt="Balconada frente a la antigua plaza Montserrat (Lima y Belgrano), c. 1890 (AGN). Se observa a la derecha la calle del Pecado."
+        />
+      </div>
 
+      <a class="bounce" href="#bio-8">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
+    </div>
+    <div class="content" id="bio-8">
+      <div class="content-container">
+        <p>
+          Juana Manso falleció en Buenos Aires el 24 de abril de 1875, fue
+          sepultada en el Cementerio Británico y, en 1915, sus restos fueron
+          trasladados al panteón de Maestros del cementerio de la Chacarita.
+        </p>
+      </div>
+      <a class="bounce" href="#section-2">
+        <img
+          src="./assets/arrowDown.svg"
+          class="arrow-down"
+          alt="flecha apuntando hacia abajo"
+        />
+      </a>
     </div>
     <!-- 
      * MUJER TRADUCTORA TITLE
     -->
-    <div class="section-intro">
-        <div class="box">
-            <div class="section-body">
-                <h2 class="sub-title">Mujer traductora</h2>
-                <blockquote class="quote">
-                    <p>
-                        «Yo prefiero trraducir porque mis ideas tal vez no tengan autoridad».
-                    </p>
-                    <footer class="title quote-author">Juana Manso.</footer>
-                </blockquote>
-            </div>
+    <div class="section-intro" id="section-2">
+      <div class="box">
+        <div class="section-body">
+          <h2 class="sub-title">Mujer traductora</h2>
+          <blockquote class="quote">
+            <p>
+              «Yo prefiero traducir porque mis ideas tal vez no tengan
+              autoridad».
+            </p>
+            <footer class="title quote-author">Juana Manso.</footer>
+          </blockquote>
         </div>
-        <div class="section-img">
-            <img src="./assets/03.jpg" alt="portada novela">
-        </div>
+      </div>
+      <div class="section-img">
+        <img src="./assets/03.jpg" alt="portada novela" />
+      </div>
     </div>
     <!-- 
      * MUJER TRADUCTORA CONTENT
     -->
-    <div class="content" id="carrera">
-        
-        <h2 class="sub-title">Una traductora muy jóven</h2>
+    <div class="content" id="carrera-1">
+      <h2 class="sub-title">Una traductora muy jóven</h2>
 
-        <p>
-            Desde muy temprana edad, Juana Paula se interesó en el estudio de idiomas y a los 14 hizo su primera traducción. 
-        </p>
+      <p>
+        Desde muy temprana edad, Juana Paula se interesó en el estudio de
+        idiomas y a los 14 hizo su primera traducción.
+      </p>
 
-        <h2 class="sub-title">Desde el francés</h2>
+      <h2 class="sub-title">Desde el francés</h2>
 
-        <p>
-            Dentro de su labor como traductora, encontramos obras como <a href="#">El egoísmo y la amistad o los defectos del orgullo</a>, que su padre hizo imprimir bajo el seudónimo de Una <strong>joven argentina</strong> y Mambrogenia o la heroína de Grecia.
-        </p>
+      <p>
+        Dentro de su labor como traductora, encontramos obras como
+        <a href="#">El egoísmo y la amistad o los defectos del orgullo</a>, que
+        su padre hizo imprimir bajo el seudónimo de Una
+        <strong>joven argentina</strong> y Mambrogenia o la heroína de Grecia.
+      </p>
 
-        <img src="./assets/dedicatoria.png" alt="Dedicatoria" class="w-100 center">
+      <img
+        src="./assets/dedicatoria.png"
+        alt="Dedicatoria"
+        class="w-100 center img"
+      />
 
-        <p class="animation">
-            “Vosotras sois, queridas compatriotas, el objeto á quién dedico el débil ensayo de mis estudios; porque fue cerca de vosotras que gusté de esta é inocente distracción de la imaginación que al paso que contribuía á formar nuestra razón no inspira sentimientos tan nobles como generosos”
-        </p>
-        <p class="center">Vuestra compatriota.</p>
-        <p class="center">Juana Manso</p>
+      <p class="animation">
+        “Vosotras sois, queridas compatriotas, el objeto á quién dedico el débil
+        ensayo de mis estudios; porque fue cerca de vosotras que gusté de esta é
+        inocente distracción de la imaginación que al paso que contribuía á
+        formar nuestra razón no inspira sentimientos tan nobles como generosos”
+      </p>
+      <p class="center">Vuestra compatriota.</p>
+      <p class="center">Juana Manso</p>
 
-        <h2 class="sub-title">Desde el inglés</h2>
+      <h2 class="sub-title">Desde el inglés</h2>
 
-        <p>
-            Tradujo varios escritos, entre ellos Las lecciones objetivas, de Norman Calkins; La libertad civil, de Francis Lieber; Naturaleza y valor de la educación, de John Lalor, Lecturas e informes, de Horace Mann y el reglamento de Bibliotecas de Nueva York.
-        </p>
+      <p>
+        Tradujo varios escritos, entre ellos Las lecciones objetivas, de Norman
+        Calkins; La libertad civil, de Francis Lieber; Naturaleza y valor de la
+        educación, de John Lalor, Lecturas e informes, de Horace Mann y el
+        reglamento de Bibliotecas de Nueva York.
+      </p>
 
-        <h2 class="sub-title">También desde el portugués</h2>
+      <h2 class="sub-title">También desde el portugués</h2>
 
-        <p>
-            Asimismo, tradujo al castellano sus propias obras escritas en portugués durante su estadía y exilio en Brasil.
-        </p>
-
+      <p>
+        Asimismo, tradujo al castellano sus propias obras escritas en portugués
+        durante su estadía y exilio en Brasil.
+      </p>
     </div>
-
-    <script src="https://unpkg.com/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
     <script src="./index.js" type="text/javascript"></script>
-</body>
+  </body>
 </html>

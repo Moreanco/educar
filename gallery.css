@@ -14,37 +14,37 @@
     font-size: 0px;
     margin-bottom: 50px;
 }
-  
-  .scroll-container .scroll-section {
+
+.scroll-container .scroll-section {
     display: inline-block;
     vertical-align: middle;
     background: #fff;
     border: solid 1px #ccc;
     white-space: nowrap;
 }
+
   /*Slider X (different sized images)*/
-  
-  .scroll-container.diff-size {
+.scroll-container.diff-size {
     scroll-snap-destination: 50% 0%;
     padding: 20px 0px;
 }
-  
-  .scroll-container.diff-size .scroll-section {
+
+.scroll-container.diff-size .scroll-section {
     /* width: auto; */
     height: 100%;
     margin-right: 15px;
     scroll-snap-coordinate: 50% 0%;
 }
-  
-  .scroll-container.diff-size .scroll-section:first-child {
+
+.scroll-container.diff-size .scroll-section:first-child {
     scroll-snap-coordinate: 0% 0%, 50% 0%;
     margin-left: 15px;
 }
-  
-  .scroll-container.diff-size .scroll-section:last-child {
+
+.scroll-container.diff-size .scroll-section:last-child {
     scroll-snap-coordinate: 50% 0%, 100% 0%;
 }
-  
+
 
 *,
 *:before,

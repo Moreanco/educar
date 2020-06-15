@@ -1,3 +1,3 @@
 (() => {
-    ScrollReveal().reveal('p, h2, img', { delay: 500 });
+    ScrollReveal().reveal('p, h2, .img, a', { delay: 300 });
 })()
