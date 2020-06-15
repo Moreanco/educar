@@ -19,6 +19,10 @@ body::-webkit-scrollbar {
     max-width: 100%;
 }
 
+.w-20 {
+    max-width: 20%;
+}
+
 .box {
     width: 30%;
 }
@@ -65,5 +69,11 @@ html.sr p, h2, .img, a {
     }
     60% {
         transform: translateY(-15px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .w-20 {
+        display:none
     }
 }

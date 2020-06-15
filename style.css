@@ -67,7 +67,6 @@
 }
 
 .section-img {
-  transform: translateY(-25%);
   text-align: center;
 }
 
@@ -81,6 +80,8 @@
 .content {
   background-color: #eeefee;
   text-align: justify;
+  padding: 1em 4em;
+  max-height: 100vh;
 }
 
 .content-container {
@@ -166,5 +167,9 @@
 
   .section-img > img {
     max-width: 90%;
+  }
+
+  .content {
+    padding: 2em 4em;
   }
 }
