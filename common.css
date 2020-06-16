@@ -46,8 +46,17 @@ body::-webkit-scrollbar {
 }
 
 .arrow-down {
-    width: 3em;
-    opacity: .5;
+    color: #222;
+    width: 2em;
+}
+
+.fixed-container {
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
 }
 
 .bounce {
@@ -56,7 +65,7 @@ body::-webkit-scrollbar {
     animation: bounce 2s infinite;
 }
 
-html.sr p, h2, .img, a {
+html.sr p, h2, .img {
     visibility: hidden;
 }
 
