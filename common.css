@@ -46,17 +46,17 @@ body::-webkit-scrollbar {
 }
 
 .arrow-down {
-    opacity: .5;
-    width: 3em;
+    color: #222;
+    width: 2em;
 }
 
-.fixed-arrow {
-    background-color: red;
+.fixed-container {
     bottom: 0;
-    width: 3em;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
     position: fixed;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
 }
 
 .bounce {

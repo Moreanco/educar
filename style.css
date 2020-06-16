@@ -84,10 +84,6 @@
   max-height: 100vh;
 }
 
-.content {
-  /* font-size: 22px; */
-}
-
 .content-container {
   align-items: center;
   flex: 2;
