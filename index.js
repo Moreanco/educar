@@ -2,10 +2,14 @@
     ScrollReveal().reveal('p, h2, .img', { delay: 300 });
 })()
 
+let targets;
+(() => {
+    targets = [...document.querySelectorAll(".content, .section-intro")] || [];
+})()
+
 
 function scrollNext() {
     const minHeight = window.innerHeight / 10;
-    const targets = [...document.querySelectorAll('.content, .section-intro')] || [];
     const scrollable = targets.find(target => target.getBoundingClientRect().top > minHeight);
     console.log({ scrollable })
     if (scrollable) {
