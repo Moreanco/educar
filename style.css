@@ -114,20 +114,12 @@
   align-items: center;
 }
 
-.img {
-  width: 50%;
-}
-
 /**
  * MEDIA QUERIES
  */
 @media (max-width: 768px) {
   .landing-img {
     background-image: url("assets/landing-tablet.png");
-  }
-
-  .img {
-    max-height: 60%;
   }
 
   #main-title {
