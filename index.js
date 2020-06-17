@@ -84,11 +84,11 @@ const typeWrite = async (el, direction) => {
       offset: '-=775',
       delay: (el, i) => 34 * (i+1)
     });
-
 }
 
+// on load
 (() => {
-  ScrollReveal().reveal(".fade-in, .img", { delay: 350 });
+  ScrollReveal().reveal(".fade-in, .img", { delay: 300, duration: 1500 });
 
   const SCROLL_TRIGGER_OFFSET = '95%';
 
