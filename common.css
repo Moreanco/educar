@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
     animation: bounce 2s infinite;
 }
 
-html.sr p, h2, .img {
+html.sr .fade-in, .img {
     visibility: hidden;
 }
 
