@@ -13,7 +13,7 @@
 .landing,
 .landing-img,
 .content {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
 
@@ -81,7 +81,7 @@
   background-color: #eeefee;
   text-align: left;
   padding: 1em 4em;
-  max-height: 100vh;
+  /* max-height: 100vh; */
 }
 
 .content-container {
