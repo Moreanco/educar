@@ -11,6 +11,11 @@
 }
 
 .landing,
+.intro {
+  align-items: center;
+}
+
+.landing,
 .landing-img,
 .content {
   width: 100%;
@@ -18,10 +23,8 @@
 
 .landing,
 .content {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .landing-img {
@@ -83,14 +86,11 @@
 }
 
 .content-container {
-  align-items: center;
-  flex: 2;
   display: flex;
 }
 
 .multi {
   flex-direction: column;
-  justify-content: center;
 }
 
 .intro {

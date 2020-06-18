@@ -54,6 +54,8 @@ body::-webkit-scrollbar {
     filter: grayscale(100%);
 }
 
+.title,
+.sub-title,
 .center {
     display: block;
     margin: 0 auto;
@@ -64,15 +66,6 @@ body::-webkit-scrollbar {
     width: 2em;
 }
 
-.fixed-container {
-    bottom: 0;
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    width: 100%;
-    z-index: 2;
-}
-
 .bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
@@ -81,6 +74,10 @@ body::-webkit-scrollbar {
 
 html.sr .fade-in, .img {
     visibility: hidden;
+}
+
+.a-left {
+    justify-self: left;
 }
 
 @keyframes bounce {
