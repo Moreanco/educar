@@ -1,4 +1,4 @@
-const getArrWords = string => string.trim().split(' ').filter( el => el !== '' );
+const getArrWords = string => string.trim().split(' ').filter(el => el !== '' );
 
 const getSpan = (word, className) => {
   const span = document.createElement('span');
@@ -104,6 +104,25 @@ const typeWrite = async (el, direction) => {
     });
 }
 
+const fadeInTitle = () => {
+  const textWrapper = document.querySelector('.fade-in-title');
+  textWrapper.innerHTML = textWrapper.textContent.replace(
+    /\S/g,
+    '<span class="fade-in-letter">$&</span>'
+  );
+
+  anime
+    .timeline()
+    .add({
+      targets: '.fade-in-title .fade-in-letter',
+      translateX: [40, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1200,
+      delay: (el, i) => 500 + 30 * i,
+    });
+}
 // on load
 (() => {
   ScrollReveal().reveal(".fade-in, .img", { delay: 350, duration: 1500 });
@@ -128,6 +147,16 @@ const typeWrite = async (el, direction) => {
       new Waypoint({
         element,
         handler: direction => typeWrite(element, direction),
+        offset: SCROLL_TRIGGER_OFFSET
+      })
+    })
+
+  document
+    .querySelectorAll('.fade-in-title')
+    .forEach(element => {
+      new Waypoint({
+        element,
+        handler: direction => fadeInTitle(element, direction),
         offset: SCROLL_TRIGGER_OFFSET
       })
     })
