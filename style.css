@@ -79,7 +79,7 @@
 
 .content {
   background-color: #eeefee;
-  text-align: justify;
+  text-align: left;
   padding: 1em 4em;
   max-height: 100vh;
 }
@@ -97,7 +97,7 @@
 
 .content .quote {
   padding: 0 10% 3em;
-  text-align: center;
+  text-align: left;
 }
 
 .section-body {
@@ -147,7 +147,7 @@
   left: 0;
   height: 100%;
   width: 3px;
-  background-color: #fff;
+  background-color: #222;
   transform-origin: 0 50%;
 }
 

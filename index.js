@@ -58,37 +58,55 @@ const typeWrite = async (el, direction) => {
     el.appendChild(wrapper)
   }
 
-  var textWrapper = document.querySelector('.type-write .letters');
+  let textWrapper = document.querySelector('.type-write .letters');
   textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter' style='opacity:0'>$&</span>");
 
-  anime.timeline()
+  const lineWidth = document
+    .querySelector(".type-write .letters")
+    .getBoundingClientRect().width;
+  anime
+    .timeline()
     .add({
-      targets: '.type-write .line',
-      scaleY: [0,1],
-      opacity: [0.5,1],
-      easing: "easeOutExpo",
-      duration: 900
-    })
-    .add({
-      targets: '.type-write .line',
-      translateX: [0, document.querySelector('.type-write .letters').getBoundingClientRect().width + 10],
+      targets: ".type-write .line",
+      scaleY: [0, 1],
+      opacity: [0.5, 1],
       easing: "easeOutExpo",
       duration: 900,
-      delay: 200
     })
     .add({
-      targets: '.type-write .letter',
-      opacity: [0,1],
+      targets: ".type-write .line",
+      translateX: [
+        0,
+        lineWidth + 10,
+      ],
+      easing: "easeOutExpo",
+      duration: 900,
+      delay: 200,
+    })
+    .add({
+      targets: ".type-write .letter",
+      opacity: [0, 1],
       easing: "easeOutExpo",
       duration: 800,
-      offset: '-=775',
-      delay: (el, i) => 34 * (i+1)
+      offset: "-=775",
+      delay: (el, i) => 34 * (i + 1),
+    })
+    .add({
+      targets: ".type-write .line",
+      scaleY: [1, 0],
+      opacity: [1, 0],
+      translateX: [
+        lineWidth + 10,
+        lineWidth + 10,
+      ],
+      easing: "easeOutExpo",
+      duration: 900,
     });
 }
 
 // on load
 (() => {
-  ScrollReveal().reveal(".fade-in, .img", { delay: 300, duration: 1500 });
+  ScrollReveal().reveal(".fade-in, .img", { delay: 350, duration: 1500 });
 
   const SCROLL_TRIGGER_OFFSET = '95%';
 
@@ -117,7 +135,6 @@ const typeWrite = async (el, direction) => {
 })();
 
 let targets;
-let arrow;
 (() => {
   targets = [...document.querySelectorAll(".content, .section-intro")] || [];
   arrow = document.querySelector(".fixed-container");
@@ -128,19 +145,7 @@ function scrollNext() {
   const scrollable = targets.find(
     (target) => target.getBoundingClientRect().top > minHeight
   );
-  console.log({ scrollable });
   if (scrollable) {
     scrollable.scrollIntoView();
-    displayArrowOrNot();
   }
 }
-
-function displayArrowOrNot() {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
-    arrow.style.display = "none";
-  } else if (arrow.style.display === "none") {
-    arrow.style.display = "block";
-  }
-};
-
-window.addEventListener("scroll", displayArrowOrNot);
