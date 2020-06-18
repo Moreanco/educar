@@ -27,6 +27,10 @@
   flex-direction: column;
 }
 
+.content .quote {
+  padding: 3em;
+}
+
 .landing-img {
   background-image: url("assets/landing.png");
   background-position: center;
