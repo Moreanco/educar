@@ -15,6 +15,12 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .w-100 {
     max-width: 100%;
 }
