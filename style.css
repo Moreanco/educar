@@ -302,13 +302,17 @@ i.fa {
 
   .content,
   .section-intro {
-    padding: 4em 1em;
+    padding: 4em .5em;
   }
 
   .content,
   .section-intro {
     align-items: unset;
     flex-direction: column;
+  }
+
+  .content .quote {
+      max-width: 95%;
   }
 
   .arrow-down {
@@ -344,7 +348,7 @@ i.fa {
   }
 
   .content {
-    padding: 2em 4em;
+    padding: 2em .8em;
   }
 }
 
