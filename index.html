@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./gallery.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./lib/noframework.waypoints.min.js"></script>
   </head>
   <body>
     <!--
@@ -31,7 +33,7 @@
     </header>
     <div class="content intro vh-50" id="intro" class="intro">
       <blockquote class="box quote">
-        <p class="fade-in-title">
+        <p class="fade-in-by-word">
           «La verdadera prosperidad de un pueblo, como la verdadera nobleza de
           los individuos, está basada en la educación».
         </p>
@@ -77,7 +79,7 @@
     -->
     <div class="content" id="bio-1">
       <div class="content-container multi">
-        <h2 class="sub-title fade-in-title">Niñez</h2>
+        <h2 class="sub-title">Niñez</h2>
         <p class="fade-in">
           Nació en Buenos Aires el <strong>26 de junio de 1819</strong> en el barrio de Monserrat.
           <!-- Monserrat. -->
@@ -96,7 +98,7 @@
     </div>
     <div class="content" id="bio-3">
       <div class="content-container multi">
-        <h2 class="sub-title fade-in-title">Familia y exilio</h2>
+        <h2 class="sub-title">Familia y exilio</h2>
         <p class="fade-in">
           Su padre fue un andaluz llamado José María Manso y su madre una
           porteña, Teodora Cuenca.
@@ -172,7 +174,7 @@
     <div class="section-intro" id="section-2">
       <div class="box">
         <div class="section-body">
-          <h2 class="sub-title fade-in">Mujer traductora</h2>
+          <h2 class="sub-title">Mujer traductora</h2>
           <blockquote class="quote">
             <p class="fade-in">
               «Yo prefiero traducir porque mis ideas tal vez no tengan
@@ -191,7 +193,7 @@
     -->
     <div class="content" id="carrera-1">
       <div class="content-container multi">
-        <h2 class="sub-title fade-in">Una traductora muy joven</h2>
+        <h2 class="sub-title">Una traductora muy joven</h2>
 
         <p class="fade-in">
           Desde muy temprana edad, Juana Paula se interesó en el estudio de
@@ -201,7 +203,7 @@
     </div>
     <div class="content" id="carrera-2">
       <div class="content-container multi">
-        <h2 class="sub-title fade-in">Desde el francés</h2>
+        <h2 class="sub-title">Desde el francés</h2>
 
         <p class="fade-in">
           Dentro de su labor como traductora, encontramos obras como
@@ -232,11 +234,11 @@
     </div>
     <div class="content" id="carrera-4">
       <div class="content-container multi">
-        <h2 class="sub-title fade-in">Desde el inglés</h2>
+        <h2 class="sub-title">Desde el inglés</h2>
 
         <p class="fade-in">
           Tradujo varios escritos, entre ellos <i>Las lecciones objetivas</i>, de
-          Norman Calkins; <i>La libertad civil</i>i>, de Francis Lieber; <i>Naturaleza y
+          Norman Calkins; <i>La libertad civil</i>, de Francis Lieber; <i>Naturaleza y
           valor de la educación</i>, de John Lalor, <i>Lecturas e informes</i>, de Horace
           Mann y el reglamento de Bibliotecas de Nueva York.
         </p>
@@ -321,7 +323,7 @@
     <div class="section-intro" id="section-1">
       <div class="box">
         <div class="section-body">
-          <h2 class="sub-title fade-in">Mujer feminista</h2>
+          <h2 class="sub-title">Mujer feminista</h2>
           <blockquote class="quote">
             <p class="fade-in">
               «Conozco que la época en que vivo soy en mi país un alma huérfana
@@ -464,7 +466,7 @@
 
       <img class="img center" src="./assets/libro.png" alt="Si este libro se perdiera como puede suceder se le ruega al que lo encuentre que lo sepa devolver. A la calle Rivadavia dos mil trescientos y un siento que se´ra gratificada su honradez con un juguete. Juana Manso." class="img">
 
-      <h2 class="sub-title fade-in">CONFERENCIAS Y MÁS</h2>
+      <h2 class="sub-title">CONFERENCIAS Y MÁS</h2>
 
       <p class="fade-in">
         Como si fuera poco, esta mujer <strong>daba conferencias</strong>, cuando el espacio público era solo para los hombres, <strong>exigía libros</strong>, levantaba la voz para defenderse y fue la primera mujer que ocupó un alto cargo, cuando el 29 de mayo de 1871 el ministro Avellaneda la nombró para <strong>conformar la Comisión Nacional de Escuelas.</strong>
@@ -528,9 +530,9 @@
           La iniciativa es una propuesta socioeducativa, que posibilita la alfabetización y la inclusión digital de todos los integrantes de las familias.
         </p>
 
-        <h1 class="sub-title fade-in">COMPONENTES DEL PROGRAMA</h2>
+        <h1 class="sub-title">COMPONENTES DEL PROGRAMA</h2>
 
-        <h2 class="sub-title fade-in">Antecedentes</h1>
+        <h2 class="sub-title">Antecedentes</h1>
 
         <p class="fade-in">
           En 2004 se hizo la primera de las sucesivas compras masivas de 50.000 computadoras para las aulas de informática. En 2009 comenzaron los pilotos del modelo 1 a 1 y se entregaron 250.000 netbooks a las escuelas técnicas.
@@ -585,7 +587,7 @@
           Southwell, M. (2005). Juana P. Manso (1819-1875). Perspectivas: Revista Trimestral de Educación Comparada. París: UNESCO, Oficina Internacional de Educación.
         </p>
 
-        <h2 class="sub-title fade-in">Créditos</h2>
+        <h2 class="sub-title">Créditos</h2>
 
         <p class="fade-in">
           Agradecemos especialmente la colaboración de María De Giorgio.
@@ -611,8 +613,6 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="./lib/noframework.waypoints.min.js"></script>
     <script src="./index.js" type="text/javascript"></script>
   </body>
 </html>
