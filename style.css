@@ -11,6 +11,11 @@
   margin-top: 2em;
   font-size: 2em;
   max-width: 100%;
+  visibility: hidden;
+}
+
+.animated {
+  visibility: visible;
 }
 
 .landing,
