@@ -61,8 +61,11 @@ body::-webkit-scrollbar {
     margin: 0 auto;
 }
 
+.arrow-up,
 .arrow-down {
-    color: #222;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     width: 2em;
 }
 

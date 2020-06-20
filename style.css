@@ -340,12 +340,6 @@ i.fa {
     max-width: 95%;
   }
 
-  .arrow-down {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .intro .quote {
     min-height: 100vh;
     display: flex;
