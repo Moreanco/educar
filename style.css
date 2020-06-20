@@ -358,7 +358,6 @@ i.fa {
   }
 
   .section-img {
-    transform: unset;
     margin: 20px;
   }
 
@@ -368,6 +367,12 @@ i.fa {
 
   .content {
     padding: 2em .8em;
+  }
+}
+
+@media (max-width: 1450px) {
+  .section-img {
+    max-width: 50%;
   }
 }
 
