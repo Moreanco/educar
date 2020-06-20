@@ -71,6 +71,10 @@
   margin: 1em 0;
 }
 
+.content-container p {
+  text-align: center;
+}
+
 .section-intro {
   align-items: center;
   background-color: #222;
