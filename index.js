@@ -62,18 +62,22 @@ const fadeInWord = (el, direction) => {
 (() => {
   ScrollReveal().reveal(".fade-in, .img", { delay: 350, duration: 1500 });
 
-  const scroller = scrollama();
   const offset = Math.floor(window.innerHeight * 0.9) + "px";
 
-  scroller
-    .setup({
-      step: ".sub-title",
-      offset
-    })
-    .onStepEnter(({ element, direction }) => fadeInLetter(element, direction));
-
-  // setup resize event
-  window.addEventListener("resize", scroller.resize);
+  document.querySelectorAll(".sub-title").forEach((element) => {
+    new Waypoint({
+      element,
+      handler: (direction) => fadeInLetter(element, direction),
+      offset,
+    });
+  });
+  document.querySelectorAll(".fade-in-by-word").forEach((element) => {
+    new Waypoint({
+      element,
+      handler: (direction) => fadeInWord(element, direction),
+      offset,
+    });
+  });
 })();
 
 let targets;
