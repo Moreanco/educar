@@ -40,16 +40,21 @@ const fadeInLetter = (el, direction) => {
   });
 };
 
+let fadeInWordNumber = 0;
 const fadeInWord = (el, direction) => {
-  if (direction === "up") {
+  if (direction === "up" || hasBeenAnimated(el)) {
     return;
   }
   const words = getArrWords(el.textContent);
   el.innerHTML = "";
   words.forEach((w) => el.appendChild(getSpan(`${w} `, "fade-in-word")));
+  
+  const className = `fade-in-${fadeInWordNumber}`;
+  el.classList.add(className);
+  fadeInWordNumber++;
 
   anime.timeline().add({
-    targets: ".fade-in-by-word .fade-in-word",
+    targets: `.${className} .fade-in-word`,
     translateX: [40, 0],
     translateZ: 0,
     opacity: [0, 1],
@@ -63,7 +68,7 @@ const fadeInWord = (el, direction) => {
 (() => {
   ScrollReveal().reveal(".fade-in, .img", { delay: 350, duration: 1500 });
 
-  const offset = "bottom-in-view";
+  const offset = "95%";
 
   document.querySelectorAll(".sub-title").forEach((element) => {
     new Waypoint({

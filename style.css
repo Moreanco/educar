@@ -235,11 +235,6 @@ h2 .sub-title {
   text-align: center;
   display: inline-block;
   color: #111;
-  -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  /* transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); */
 }
 
 i.fa {
@@ -300,6 +295,10 @@ i.fa {
  * MEDIA QUERIES
  */
 @media (max-width: 768px) {
+  .sub-title {
+    text-align: center;
+  }
+
   .landing-img {
     background-image: url("assets/landing-tablet.png");
   }
@@ -328,7 +327,7 @@ i.fa {
   }
 
   .content .quote {
-      max-width: 95%;
+    max-width: 95%;
   }
 
   .arrow-down {
