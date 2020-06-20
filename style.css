@@ -296,6 +296,16 @@ i.fa {
   background: #111;
 }
 
+.morean-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.morean-container > a > img {
+  margin: 8px 8px 0;
+}
+
 /**
  * MEDIA QUERIES
  */
