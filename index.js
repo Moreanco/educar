@@ -12,29 +12,35 @@ const getSpan = (word, className) => {
   return span;
 };
 
-const fadeInLetter = (direction) => {
-  const el = this.element;
-  if (direction === "up") {
+const addAnimated = el => el.classList.add('animated')
+const hasBeenAnimated = el => el.classList.contains('animated')
+
+let fadeInLetterNumber = 0;
+const fadeInLetter = (el, direction) => {
+  if (direction === "up" || hasBeenAnimated(el)) {
     return;
   }
   el.innerHTML = el.textContent.replace(
     /\S/g,
     "<span class='fade-in-letter'>$&</span>"
   );
+  const className = `fade-in-${fadeInLetterNumber}`;
+  el.classList.add(className);
+  fadeInLetterNumber++
 
   anime.timeline().add({
-    targets: ".sub-title .fade-in-letter",
+    targets: `.${className} .fade-in-letter`,
     translateX: [40, 0],
     translateZ: 0,
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 500 + 20 * i,
+    begin: () => addAnimated(el)
   });
 };
 
-const fadeInWord = (direction) => {
-  const el = this.element;
+const fadeInWord = (el, direction) => {
   if (direction === "up") {
     return;
   }
@@ -56,17 +62,18 @@ const fadeInWord = (direction) => {
 (() => {
   ScrollReveal().reveal(".fade-in, .img", { delay: 350, duration: 1500 });
 
-  const SCROLL_TRIGGER_OFFSET = "90%";
+  const scroller = scrollama();
+  const offset = Math.floor(window.innerHeight * 0.9) + "px";
 
-  $(".fade-in-by-word").waypoint({
-    handler: (direction) => fadeInWord(direction),
-    offset: SCROLL_TRIGGER_OFFSET,
-  });
+  scroller
+    .setup({
+      step: ".sub-title",
+      offset
+    })
+    .onStepEnter(({ element, direction }) => fadeInLetter(element, direction));
 
-  $(".sub-title").waypoint({
-    handler: (direction) => fadeInLetter(direction),
-    offset: SCROLL_TRIGGER_OFFSET,
-  });
+  // setup resize event
+  window.addEventListener("resize", scroller.resize);
 })();
 
 let targets;
