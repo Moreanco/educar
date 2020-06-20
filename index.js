@@ -34,7 +34,7 @@ const fadeInLetter = (el, direction) => {
     translateZ: 0,
     opacity: [0, 1],
     easing: "easeOutExpo",
-    duration: 1200,
+    duration: 2500,
     delay: (el, i) => 500 + 20 * i,
     begin: () => addAnimated(el)
   });
@@ -54,15 +54,16 @@ const fadeInWord = (el, direction) => {
     translateZ: 0,
     opacity: [0, 1],
     easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 500 + 100 * i,
+    duration: 2500,
+    delay: (el, i) => 500 + 40 * i,
+    begin: () => addAnimated(el),
   });
 };
 // on load
 (() => {
   ScrollReveal().reveal(".fade-in, .img", { delay: 350, duration: 1500 });
 
-  const offset = Math.floor(window.innerHeight * 0.9) + "px";
+  const offset = "bottom-in-view";
 
   document.querySelectorAll(".sub-title").forEach((element) => {
     new Waypoint({

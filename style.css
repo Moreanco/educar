@@ -10,6 +10,10 @@
   margin-bottom: 2em;
   margin-top: 2em;
   max-width: 100%;
+}
+
+.sub-title,
+.fade-in-by-word {
   visibility: hidden;
 }
 
