@@ -110,6 +110,9 @@ html.sr .fade-in, .img {
     .img {
         max-width: 100%;
     }
+    .section-img .img {
+        margin: 0
+    }
 }
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
