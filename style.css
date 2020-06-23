@@ -301,7 +301,6 @@ i.fa {
 .morean-container {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .morean-container > a > img {
