@@ -12,7 +12,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 a {
@@ -23,6 +23,10 @@ a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.container {
+    background-color: #eeefee
 }
 
 .w-100 {
@@ -97,6 +101,11 @@ html.sr .fade-in, .img {
 
 .small-font > p {
     font-size: 16px;
+}
+
+.content-container.small-font p {
+    text-align: left;
+    /* margin-left: 0; */
 }
 
 @keyframes bounce {

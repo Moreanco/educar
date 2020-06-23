@@ -44,7 +44,7 @@ h2 .sub-title {
 
 .content .quote {
   max-width: 80%;
-  padding: 3em;
+  padding: 3em 0;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -74,17 +74,24 @@ h2 .sub-title {
 }
 
 .content {
+  max-width: 845px;
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
 
+.content::after {
+  content: '';
+  background: white;
+}
+
 .content p {
-  margin: 1em 0;
+  margin: 1em;
 }
 
 .content-container p {
   text-align: center;
+  /* text-align: left; */
 }
 
 .section-intro {
@@ -113,7 +120,7 @@ h2 .sub-title {
 .content {
   background-color: #eeefee;
   text-align: left;
-  padding: 1em 4em;
+  padding: 1em;
 }
 
 .content-container {
@@ -382,4 +389,5 @@ i.fa {
   .content {
       font-size: 22px;
   }
+
 }
