@@ -87,11 +87,11 @@ h2 .sub-title {
 
 .content p {
   margin: 1em;
+  text-align: center;
 }
 
 .content-container p {
   text-align: center;
-  /* text-align: left; */
 }
 
 .section-intro {
