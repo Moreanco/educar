@@ -326,6 +326,10 @@ i.fa {
   .box {
     width: 100%;
   }
+  
+  p.box {
+    margin: 0;
+  }
 
   .content {
     flex-direction: column;

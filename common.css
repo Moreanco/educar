@@ -3,16 +3,13 @@ html {
 }
 
 body {
-    background: #eeefee;
+    background-color: #eeefee;
     color: #222;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     margin: 0;
+    overflow-x: hidden;
     -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-  /* display: none; */
 }
 
 a {
