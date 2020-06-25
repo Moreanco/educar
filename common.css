@@ -100,6 +100,10 @@ html.sr .fade-in, .img {
     font-size: 16px;
 }
 
+.small-font-source {
+    font-size: 14px;
+}
+
 .content-container.small-font p {
     text-align: left;
     /* margin-left: 0; */
